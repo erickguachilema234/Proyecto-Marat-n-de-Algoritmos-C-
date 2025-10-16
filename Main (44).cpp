@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int dia, mes, anio;
+    string meses[] = {"enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"};
+    cout << "Ingrese dia, mes y año: ";
+    cin >> dia >> mes >> anio;
+    if (mes >= 1 && mes <= 12)
+        cout << dia << " de " << meses[mes-1] << " de " << anio << endl;
+    else
+        cout << "Mes invalido." << endl;
+    return 0;
+}

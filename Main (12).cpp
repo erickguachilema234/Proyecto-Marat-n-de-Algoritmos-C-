@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double base, altura;
+    cout << "Ingrese la base y la altura del rectangulo: ";
+    cin >> base >> altura;
+    cout << "El area es: " << base * altura << endl;
+    return 0;
+}

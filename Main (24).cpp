@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double metros;
+    cout << "Ingrese la distancia en metros: ";
+    cin >> metros;
+    cout << "Equivale a " << metros * 100 << " cm y " << metros * 1000 << " mm." << endl;
+    return 0;
+}

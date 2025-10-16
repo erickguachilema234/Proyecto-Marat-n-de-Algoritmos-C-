@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double precio;
+    cout << "Ingrese el precio del producto: ";
+    cin >> precio;
+    double total = precio * 1.12;
+    cout << "El precio con IVA es: $" << total << endl;
+    return 0;
+}

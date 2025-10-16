@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double radio;
+    cout << "Ingrese el radio del circulo: ";
+    cin >> radio;
+    cout << "El diametro es: " << radio * 2 << endl;
+    return 0;
+}

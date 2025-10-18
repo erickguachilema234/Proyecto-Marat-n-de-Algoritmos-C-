@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tipo;
+    cout << "Ingrese tipo de vehiculo (1=Auto, 2=Camioneta, 3=Bus, 4=Camion): ";
+    cin >> tipo;
+
+    switch (tipo) {
+        case 1: cout << "Peaje: $1.50" << endl; break;
+        case 2: cout << "Peaje: $2.00" << endl; break;
+        case 3: cout << "Peaje: $2.50" << endl; break;
+        case 4: cout << "Peaje: $3.00" << endl; break;
+        default: cout << "Tipo de vehiculo no valido." << endl;
+    }
+
+    return 0;
+}

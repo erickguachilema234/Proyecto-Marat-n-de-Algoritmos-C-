@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double nota;
+    cout << "Ingrese la nota (0-10): ";
+    cin >> nota;
+
+    if (nota >= 9)
+        cout << "Calificacion: A" << endl;
+    else if (nota >= 8)
+        cout << "Calificacion: B" << endl;
+    else if (nota >= 7)
+        cout << "Calificacion: C" << endl;
+    else if (nota >= 6)
+        cout << "Calificacion: D" << endl;
+    else
+        cout << "Calificacion: F" << endl;
+
+    return 0;
+}

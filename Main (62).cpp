@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int edad;
+    cout << "Ingrese su edad: ";
+    cin >> edad;
+
+    if (edad < 12 || edad > 60)
+        cout << "Tiene derecho a descuento." << endl;
+    else
+        cout << "No aplica descuento." << endl;
+
+    return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+    double saldo = 1000.0, monto;
+    
+    cout << "--- Cajero Automatico ---" << endl;
+    cout << "1. Consultar saldo" << endl;
+    cout << "2. Depositar dinero" << endl;
+    cout << "3. Retirar dinero" << endl;
+    cout << "4. Salir" << endl;
+    cout << "Seleccione una opcion: ";
+    cin >> opcion;
+
+    switch (opcion) {
+        case 1:
+            cout << "Su saldo actual es: $" << saldo << endl;
+            break;
+        case 2:
+            cout << "Ingrese el monto a depositar: ";
+            cin >> monto;
+            saldo += monto;
+            cout << "Nuevo saldo: $" << saldo << endl;
+            break;
+        case 3:
+            cout << "Ingrese el monto a retirar: ";
+            cin >> monto;
+            if (monto <= saldo) {
+                saldo -= monto;
+                cout << "Retiro exitoso. Saldo actual: $" << saldo << endl;
+            } else {
+                cout << "Fondos insuficientes." << endl;
+            }
+            break;
+        case 4:
+            cout << "Gracias por usar el cajero." << endl;
+            break;
+        default:
+            cout << "Opcion invalida." << endl;
+    }
+    return 0;
+}

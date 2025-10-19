@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+void mostrarCadena(string s) {
+    for (char c : s)
+        cout << c << endl;
+}
+
+int main() {
+    string palabra;
+    getline(cin, palabra);
+    mostrarCadena(palabra);
+    return 0;
+}

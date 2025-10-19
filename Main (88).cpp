@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int contarVocales(string s) {
+    int c = 0;
+    for (char ch : s) {
+        ch = tolower(ch);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            c++;
+    }
+    return c;
+}
+
+int main() {
+    string palabra;
+    getline(cin, palabra);
+    cout << "Vocales: " << contarVocales(palabra);
+    return 0;
+}

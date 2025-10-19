@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 7, suma;
+    int *p1 = &a, *p2 = &b;
+    suma = *p1 + *p2;
+    cout << "Suma: " << suma;
+    return 0;
+}

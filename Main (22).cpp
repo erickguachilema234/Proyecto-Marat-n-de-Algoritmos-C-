@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5], suma = 0;
+    for (int i = 0; i < 5; i++) {
+        cout << "Numero " << i + 1 << ": ";
+        cin >> arr[i];
+        suma += arr[i];
+    }
+    cout << "Suma total: " << suma;
+    return 0;
+}

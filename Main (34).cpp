@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[10], suma = 0, cont = 0;
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+        if (arr[i] % 2 == 0) {
+            suma += arr[i];
+            cont++;
+        }
+    }
+    if (cont > 0)
+        cout << "Promedio de pares: " << (float)suma / cont;
+    else
+        cout << "No hay pares.";
+    return 0;
+}

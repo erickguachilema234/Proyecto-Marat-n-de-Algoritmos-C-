@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+string aMinusculas(string s) {
+    for (char &c : s)
+        c = tolower(c);
+    return s;
+}
+
+int main() {
+    string texto;
+    getline(cin, texto);
+    cout << aMinusculas(texto);
+    return 0;
+}

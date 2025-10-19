@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i = 1, suma = 0;
+    cout << "Ingrese un numero: ";
+    cin >> n;
+
+    while (i <= n) {
+        suma += i;
+        i++;
+    }
+
+    cout << "Suma: " << suma;
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[8];
+    for (int i = 0; i < 8; i++)
+        cin >> arr[i];
+
+    cout << "Positivos: ";
+    for (int i = 0; i < 8; i++)
+        if (arr[i] > 0) cout << arr[i] << " ";
+    return 0;
+}

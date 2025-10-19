@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int menor(int a, int b, int c) {
+    int m = a;
+    if (b < m) m = b;
+    if (c < m) m = c;
+    return m;
+}
+
+int main() {
+    int x, y, z;
+    cin >> x >> y >> z;
+    cout << "Menor: " << menor(x, y, z);
+    return 0;
+}

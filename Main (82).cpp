@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+struct Estudiante {
+    string nombre;
+    int edad;
+};
+
+int main() {
+    Estudiante lista[3];
+    for (int i = 0; i < 3; i++) {
+        cout << "Nombre del estudiante " << i + 1 << ": ";
+        cin >> lista[i].nombre;
+        cout << "Edad: ";
+        cin >> lista[i].edad;
+    }
+    cout << "\nLista de estudiantes:\n";
+    for (int i = 0; i < 3; i++)
+        cout << lista[i].nombre << " (" << lista[i].edad << " años)\n";
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int mat[3][3], fila, suma = 0;
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            cin >> mat[i][j];
+
+    cout << "Fila a sumar (0-2): ";
+    cin >> fila;
+
+    for (int j = 0; j < 3; j++)
+        suma += mat[fila][j];
+
+    cout << "Suma de la fila " << fila << ": " << suma;
+    return 0;
+}

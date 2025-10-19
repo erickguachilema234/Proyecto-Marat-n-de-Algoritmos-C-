@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int sumar(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int x, y;
+    cout << "Ingrese dos numeros: ";
+    cin >> x >> y;
+    cout << "Suma: " << sumar(x, y);
+    return 0;
+}

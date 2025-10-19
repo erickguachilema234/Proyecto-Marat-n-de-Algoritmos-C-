@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int mat[3][3], col;
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            cin >> mat[i][j];
+
+    cout << "Ingrese columna (0-2): ";
+    cin >> col;
+
+    for (int i = 0; i < 3; i++)
+        cout << mat[i][col] << " ";
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A[5], B[5];
+    for (int i = 0; i < 5; i++)
+        cin >> A[i];
+
+    for (int i = 0; i < 5; i++)
+        B[i] = A[i];
+
+    cout << "Arreglo copiado: ";
+    for (int i = 0; i < 5; i++)
+        cout << B[i] << " ";
+    return 0;
+}

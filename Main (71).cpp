@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float areaCirculo(float r) {
+    return M_PI * r * r;
+}
+
+int main() {
+    float radio;
+    cin >> radio;
+    cout << "Area: " << areaCirculo(radio);
+    return 0;
+}

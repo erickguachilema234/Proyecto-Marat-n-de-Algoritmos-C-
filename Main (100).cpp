@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+struct Persona {
+    string nombre;
+    int edad;
+};
+
+int main() {
+    Persona p = {"Ana", 21};
+    Persona* ptr = &p;
+    cout << "Nombre: " << ptr->nombre << endl;
+    cout << "Edad: " << ptr->edad << endl;
+    return 0;
+}

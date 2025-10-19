@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[5], mayor;
+    for (int i = 0; i < 5; i++) cin >> a[i];
+    mayor = a[0];
+    for (int i = 1; i < 5; i++)
+        if (a[i] > mayor) mayor = a[i];
+    cout << "Mayor: " << mayor;
+    return 0;
+}

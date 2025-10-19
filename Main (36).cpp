@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int potencia(int b, int e) {
+    int r = 1;
+    for (int i = 1; i <= e; i++) r *= b;
+    return r;
+}
+
+int main() {
+    int b, e;
+    cin >> b >> e;
+    cout << potencia(b, e);
+    return 0;
+}

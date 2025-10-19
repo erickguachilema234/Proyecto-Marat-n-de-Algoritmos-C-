@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 25;
+    int* p = &n;
+    cout << "Valor apuntado: " << *p;
+    return 0;
+}

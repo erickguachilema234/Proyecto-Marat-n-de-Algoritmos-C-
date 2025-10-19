@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[5], buscado;
+    for (int i = 0; i < 5; i++) cin >> a[i];
+    cout << "Buscar: ";
+    cin >> buscado;
+    bool encontrado = false;
+    for (int i = 0; i < 5; i++)
+        if (a[i] == buscado) encontrado = true;
+    cout << (encontrado ? "Encontrado" : "No encontrado");
+    return 0;
+}

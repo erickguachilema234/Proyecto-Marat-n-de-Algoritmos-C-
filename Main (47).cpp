@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[5], prod = 1;
+    for (int i = 0; i < 5; i++) cin >> a[i];
+    for (int i = 0; i < 5; i++) prod *= a[i];
+    cout << "Producto: " << prod;
+    return 0;
+}

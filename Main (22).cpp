@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+float areaTriangulo(float b, float h) {
+    return (b * h) / 2;
+}
+
+int main() {
+    float base, altura;
+    cout << "Base y altura: ";
+    cin >> base >> altura;
+    cout << "Area: " << areaTriangulo(base, altura) << endl;
+    return 0;
+}

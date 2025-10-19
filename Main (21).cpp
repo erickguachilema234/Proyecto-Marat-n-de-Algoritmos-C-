@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int cuadrado(int n) {
+    return n * n;
+}
+
+int main() {
+    int num;
+    cout << "Ingrese un numero: ";
+    cin >> num;
+    cout << "El cuadrado es: " << cuadrado(num) << endl;
+    return 0;
+}

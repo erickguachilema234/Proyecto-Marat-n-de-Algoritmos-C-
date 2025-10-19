@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    string palabra;
+    cout << "Ingrese una palabra: ";
+    cin >> palabra;
+    reverse(palabra.begin(), palabra.end());
+    cout << "Invertida: " << palabra << endl;
+    return 0;
+}

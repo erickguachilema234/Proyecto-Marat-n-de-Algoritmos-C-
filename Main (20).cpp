@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+
+int main() {
+    string frase;
+    cout << "Ingrese una frase: ";
+    getline(cin, frase);
+
+    stringstream ss(frase);
+    string palabra;
+    int contador = 0;
+    while (ss >> palabra)
+        contador++;
+
+    cout << "La frase tiene " << contador << " palabras." << endl;
+    return 0;
+}

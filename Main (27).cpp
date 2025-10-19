@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void contar(int n) {
+    if (n == 0) return;
+    contar(n - 1);
+    cout << n << " ";
+}
+
+int main() {
+    int n;
+    cout << "Ingrese n: ";
+    cin >> n;
+    contar(n);
+    return 0;
+}

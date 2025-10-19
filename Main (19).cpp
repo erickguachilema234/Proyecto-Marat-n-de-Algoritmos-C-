@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    string palabra, invertida;
+    cout << "Ingrese una palabra: ";
+    cin >> palabra;
+    invertida = palabra;
+    reverse(invertida.begin(), invertida.end());
+
+    if (palabra == invertida)
+        cout << "Es palindromo." << endl;
+    else
+        cout << "No es palindromo." << endl;
+
+    return 0;
+}

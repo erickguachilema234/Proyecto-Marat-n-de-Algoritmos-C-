@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double nota, suma = 0;
+    int contador = 0;
+
+    do {
+        cout << "Ingrese una nota (-1 para terminar): ";
+        cin >> nota;
+
+        if (nota != -1) {
+            suma += nota;
+            contador++;
+        }
+    } while (nota != -1);
+
+    if (contador > 0)
+        cout << "Promedio: " << suma / contador << endl;
+    else
+        cout << "No se ingresaron notas." << endl;
+
+    return 0;
+}

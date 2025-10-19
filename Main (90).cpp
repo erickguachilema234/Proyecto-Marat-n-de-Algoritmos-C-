@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, pares = 0;
+
+    do {
+        cout << "Ingrese un numero (0 para salir): ";
+        cin >> num;
+        if (num != 0 && num % 2 == 0)
+            pares++;
+    } while (num != 0);
+
+    cout << "Se ingresaron " << pares << " numeros pares." << endl;
+    return 0;
+}
